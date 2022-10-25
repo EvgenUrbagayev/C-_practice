@@ -45,11 +45,6 @@ void PrintMatrix(int[,] InMatrix)
 
 
 
-
-
-
-
-
 int[,] PrintReversMatrix(int[,] InMatrix)
 {
     int[,] resultMatrix = new int[InMatrix.GetLength(0), InMatrix.GetLength(1)];
@@ -63,3 +58,20 @@ int[,] PrintReversMatrix(int[,] InMatrix)
     }
     return resultMatrix;
 }
+
+// rows + columns - i + j - 2 второй вариант
+
+// 3 вариант: создали новую матрицу и ее вывернули
+
+//int[,] PrintReversMatrix(int rows, int columns)
+//{
+//    int[,] matrix = new int[rows, columns];
+//    for (int i = 0; i < matrix.GetLength(0); i++)
+//    {
+//        for (int j = 0; j < matrix.GetLength(1); j++)
+//        {
+//            matrix[i,j] = matrix.GetLength(1)-j-2;
+//        }
+//    }
+//    return matrix;
+//}
